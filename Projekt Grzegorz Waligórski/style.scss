@@ -23,6 +23,7 @@ nav{
 
     a.navbar-brand, a.nav-link, a.nav-link.active{
         color: $white !important;
+        font-size: 1rem;
     }
 
     a.navbar-brand:hover, a.nav-link:hover, .nav-link.active:hover{
@@ -45,6 +46,7 @@ header{
 
     h1{
         text-transform: uppercase;
+        font-size: 2rem;
     }
 
     .intro-img{
@@ -79,6 +81,80 @@ header{
     p{
         font-size: 1.5rem;
     }
+
+    .btn-outline-light{
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .fa-chevron-down{
+        position: absolute;
+        bottom: 20px;
+        font-size: 6rem;
+        left: 50%;                         
+        transform: translateX(-50%);
+        color: $white;
+    }
+}
+
+@media(min-width: 320px){
+    header{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .fa-chevron-down{
+            font-size: 1.5rem;
+        }
+    }
+
+    nav{
+        a.navbar-brand, a.nav-link, a.nav-link.active{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width: 374px){
+    header{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        .fa-chevron-down{
+            font-size: 2rem;
+        }
+    }
+
+    nav{
+        a.navbar-brand, a.nav-link, a.nav-link.active{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+        .fa-chevron-down{
+            font-size: 4rem;
+        }
+    }
+
+    nav{
+        a.navbar-brand, a.nav-link, a.nav-link.active{
+            font-size: 1.3rem;
+        }
+    }
 }
 
 @media(min-width: 1200px){
@@ -86,8 +162,21 @@ header{
         .intro-img{
          background-image: url(../img/intro_1920.jpg);
         }
+
+        h1{
+            font-size: 2.5rem;
+         }
+
+        p{
+             font-size: 2.5rem;
+        }
+        
+        .fa-chevron-down{
+            font-size: 6rem;
+        }
     }
 }
+
 
 
 
