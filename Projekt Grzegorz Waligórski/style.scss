@@ -10,23 +10,89 @@
     padding: 0;
 }
 
+html{
+    scroll-padding-top: 66px;
+}
+
 body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
 }
 
+.shadow-bg{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline{
+    height: 5px;
+    background-color: $main;
+    margin: 0 auto 30px;
+}
+
+.one{
+    width:140px;
+}
+.two{
+    width:530px;
+}
+.two2{
+    width:280px;
+}
+.three{
+    width:220px;
+}
+
+.aboutus-hero{
+    position: relative;
+    background-image: url(../img/aboutme_6401.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    z-index: 0;
+    .aboutus-shadow{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(12, 12, 12, 0.65);
+        z-index:-10;
+    }
+    .aboutus-hero-item{
+        margin:10px 0;
+        i{
+            font-size: 2rem;
+        }
+    }
+    .aboutus-hero-title{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}
+
 nav{
     text-transform: uppercase;
     z-index: 10;
     font-size: 1.2rem;
+    transition: background-color 0.5s;
 
     a.navbar-brand, a.nav-link, a.nav-link.active{
         color: $white !important;
+        font-size: 1rem;
     }
 
     a.navbar-brand:hover, a.nav-link:hover, .nav-link.active:hover{
-        color: $blue-color !important;
+        color: $main !important;
     }
 
     .navbar-brand{
@@ -45,6 +111,7 @@ header{
 
     h1{
         text-transform: uppercase;
+        font-size: 2rem;
     }
 
     .intro-img{
@@ -79,6 +146,150 @@ header{
     p{
         font-size: 1.5rem;
     }
+
+    .btn-outline-light{
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .fa-chevron-down{
+        position: absolute;
+        bottom: 20px;
+        font-size: 6rem;
+        left: 50%;                         
+        transform: translateX(-50%);
+        color: $white;
+    }
+}
+
+.aboutus{
+    background-color: rgb(219, 226, 226);
+    
+    i{
+        font-size: 2.5rem;
+        margin-top: 30px;
+    }
+
+    .aboutus-card-title{
+        text-transform: uppercase;
+    }
+
+    .aboutus-card-description{
+        font-size: 1rem;
+    }
+
+    .aboutus-hover{
+        transition: color 0.4s;
+    }
+
+    .aboutus-hover:hover{
+        color: $main;
+    }
+}
+
+.portfolio{
+    background-color: rgb(219, 226, 226);
+
+    .carousel{
+        max-width: 800px;
+        padding-top: 15px;
+        margin: auto;
+    }
+
+    .carousel-item{
+        position: relative;
+        height: 400px;
+    }
+
+    .carousel-caption{
+        background-color: rgba(12, 12, 12, 0.9);
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 1.5rem;
+    }
+
+    .carousel-indicators{
+        padding-bottom: 20px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .card-group img{
+        height:180px;
+    }
+}
+
+@media(min-width: 320px){
+    header{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .fa-chevron-down{
+            font-size: 1.3rem;
+        }
+    }
+
+    nav{
+        a.navbar-brand, a.nav-link, a.nav-link.active{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width: 374px){
+    header{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        .fa-chevron-down{
+            font-size: 1.8rem;
+        }
+    }
+
+    nav{
+        a.navbar-brand, a.nav-link, a.nav-link.active{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+        .fa-chevron-down{
+            font-size: 3.5rem;
+        }
+    }
+
+    nav{
+        a.navbar-brand, a.nav-link, a.nav-link.active{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media(min-width: 992px){
+    html{
+        scroll-padding-top: 63.2px;
+    }
+    .aboutus-hero{
+        background-image: url(../img/aboutme_19201.jpg);
+    }
 }
 
 @media(min-width: 1200px){
@@ -86,8 +297,22 @@ header{
         .intro-img{
          background-image: url(../img/intro_1920.jpg);
         }
+
+        h1{
+            font-size: 2.5rem;
+         }
+
+        p{
+             font-size: 2.5rem;
+        }
+        
+        .fa-chevron-down{
+            font-size: 4rem;
+        }
     }
 }
+
+
 
 
 

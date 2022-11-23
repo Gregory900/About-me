@@ -1,45 +1,24 @@
-const name="Grzegorz";
-const age = 32;
+document.addEventListener("DOMContentLoaded", function(){
 
-console.log(`Mam na imie ${name} i mam ${age} lata`);
-console.log(name, age);
+const nav = document.querySelector('.navbar');
+const showList = document.querySelector(".navbar-collapse");
+const menuItems = document.querySelectorAll(".nav-link");
 
-const score = 15%2;
-
-console.log(score)
-
-let Num1=8;
-++Num1;
-++Num1;
-
-console.log(Num1)
-
-let x = 5;
-let y = 10;
-
-console.log(x*=y);
-console.log(x/=y);
-
-const tab = [1, 2, 3, 4];
-
-for (i=0; i<tab.length;i++){
-    console.log(tab[i])
+function addSchadow (){
+    if (window.scrollY>=120){
+        nav.classList.add('shadow-bg');
+    }
+    else{
+        nav.classList.remove('shadow-bg');
+    }
 }
 
-function add (b, c, d){
-    console.log(b+c*d);
-}
+menuItems.forEach(list => {
+    list.addEventListener('click', () => 
+    showList.classList.remove('show'))
+});
 
+window.addEventListener('scroll', addSchadow);
 
-add(5,4,6)
-
-if (tab.length>5){
-    console.log(true)
-}
-else console.log(false)
-
-
-
-
-
+});
 

@@ -8,19 +8,88 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 66px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   background-color: #333;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  height: 5px;
+  background-color: rgb(91, 86, 241);
+  margin: 0 auto 30px;
+}
+
+.one {
+  width: 140px;
+}
+
+.two {
+  width: 530px;
+}
+
+.two2 {
+  width: 280px;
+}
+
+.three {
+  width: 220px;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url(../img/aboutme_6401.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgb(248, 240, 240);
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.65);
+  z-index: -10;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 2rem;
+}
+.aboutus-hero .aboutus-hero-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 10;
   font-size: 1.2rem;
+  transition: background-color 0.5s;
 }
 nav a.navbar-brand, nav a.nav-link, nav a.nav-link.active {
   color: rgb(248, 240, 240) !important;
+  font-size: 1rem;
 }
 nav a.navbar-brand:hover, nav a.nav-link:hover, nav .nav-link.active:hover {
   color: rgb(91, 86, 241) !important;
@@ -39,6 +108,7 @@ header {
 }
 header h1 {
   text-transform: uppercase;
+  font-size: 2rem;
 }
 header .intro-img {
   height: 100vh;
@@ -69,9 +139,130 @@ header .intro-text {
 header p {
   font-size: 1.5rem;
 }
+header .btn-outline-light {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(248, 240, 240);
+}
 
+.aboutus {
+  background-color: rgb(219, 226, 226);
+}
+.aboutus i {
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+.aboutus .aboutus-card-title {
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-description {
+  font-size: 1rem;
+}
+.aboutus .aboutus-hover {
+  transition: color 0.4s;
+}
+.aboutus .aboutus-hover:hover {
+  color: rgb(91, 86, 241);
+}
+
+.portfolio {
+  background-color: rgb(219, 226, 226);
+}
+.portfolio .carousel {
+  max-width: 800px;
+  padding-top: 15px;
+  margin: auto;
+}
+.portfolio .carousel-item {
+  position: relative;
+  height: 400px;
+}
+.portfolio .carousel-caption {
+  background-color: rgba(12, 12, 12, 0.9);
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1.5rem;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .carousel-control-next-icon, .portfolio .carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+}
+.portfolio .card-group img {
+  height: 180px;
+}
+
+@media (min-width: 320px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 1.5rem;
+  }
+  header .fa-chevron-down {
+    font-size: 1.3rem;
+  }
+  nav a.navbar-brand, nav a.nav-link, nav a.nav-link.active {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 374px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 2rem;
+  }
+  header .fa-chevron-down {
+    font-size: 1.8rem;
+  }
+  nav a.navbar-brand, nav a.nav-link, nav a.nav-link.active {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 2.5rem;
+  }
+  header .fa-chevron-down {
+    font-size: 3.5rem;
+  }
+  nav a.navbar-brand, nav a.nav-link, nav a.nav-link.active {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 63.2px;
+  }
+  .aboutus-hero {
+    background-image: url(../img/aboutme_19201.jpg);
+  }
+}
 @media (min-width: 1200px) {
   header .intro-img {
     background-image: url(../img/intro_1920.jpg);
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 2.5rem;
+  }
+  header .fa-chevron-down {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
